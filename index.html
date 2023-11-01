@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS-Rock-Paper-Scissors</title>
+  <script src="RPS.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <h1>Can You Beat the Computer?</h1>
+  </nav>
+  <div class="options">
+    <img id="rock" onclick="chooseRock()" src="svg/rock.svg" alt="hand as rock">
+    <img id="paper" onclick="choosePaper()" src="svg/paper.svg" alt="hand as paper">
+    <img id="scissors" onclick="chooseScissors()" src="svg/scissors.svg" alt="hand as scissors">
+  </div>
+
+  <div>
+    <div>
+      <h2>History</h2>
+    </div>
+    <div class="historyRecords">
+      <p>Wins: </p>
+      <p>Draws: </p>
+      <p>Losses: </p>
+    </div>
+  </div>
+</body>
+</html>
