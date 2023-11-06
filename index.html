@@ -12,19 +12,36 @@
     <h1>Can You Beat the Computer?</h1>
   </nav>
   <div class="options">
-    <img id="rock" onclick="chooseRock()" src="svg/rock.svg" alt="hand as rock">
-    <img id="paper" onclick="choosePaper()" src="svg/paper.svg" alt="hand as paper">
-    <img id="scissors" onclick="chooseScissors()" src="svg/scissors.svg" alt="hand as scissors">
+    <img id="rock" onclick="choose(0)" src="svg/rock.svg" alt="hand as rock">
+    <img id="paper" onclick="choose(1)" src="svg/paper.svg" alt="hand as paper">
+    <img id="scissors" onclick="choose(2)" src="svg/scissors.svg" alt="hand as scissors">
+  </div>
+  <h3 id="pickOne">Pick One...</h3>
+
+  <hr>
+
+  <div class="gameArea">
+    <div class="choice">
+      <img id="player" src="svg/mystery.svg" alt="players's choice">
+      <p class="nameText">You</p>
+    </div>
+    <h1>X</h1>
+    <div class="choice">
+      <img id="opponent" src="svg/mystery.svg" alt="opponent's choice">
+      <p class="nameText">Opponent</p>
+    </div>
+    <h1>=</h1>
+    <h1 id="outcome">?</h1>
   </div>
 
-  <div>
+  <div class="history">
     <div>
-      <h2>History</h2>
+      <h1>History</h1>
     </div>
     <div class="historyRecords">
-      <p>Wins: </p>
-      <p>Draws: </p>
-      <p>Losses: </p>
+      <p id="wins">Wins: 0</p>
+      <p id="draws">Draws: 0</p>
+      <p id="losses">Losses: 0</p>
     </div>
   </div>
 </body>
