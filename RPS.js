@@ -5,15 +5,24 @@ var losses = 0;
 function choose(choice) {
   if(choice == 0) {
     document.getElementById("player").src="svg/rock.svg";
-    whoWins(0);
+    document.getElementById("opponent").src="svg/mystery.svg";
+    removeColors();
+    document.getElementById("outcome").innerText="...";
+    setTimeout(function() { whoWins(0); }, 300);
   } 
   else if(choice == 1) {
     document.getElementById("player").src="svg/paper.svg";
-    whoWins(1);
+    document.getElementById("opponent").src="svg/mystery.svg";
+    removeColors();
+    document.getElementById("outcome").innerText="...";
+    setTimeout(function() { whoWins(1); }, 300);
   }
   else {
     document.getElementById("player").src="svg/scissors.svg";
-    whoWins(2);
+    document.getElementById("opponent").src="svg/mystery.svg";
+    removeColors();
+    document.getElementById("outcome").innerText="...";
+    setTimeout(function() { whoWins(2); }, 300);
   }
 }
 
